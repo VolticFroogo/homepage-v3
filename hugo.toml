@@ -1,0 +1,4 @@
+baseURL = 'https://froogo.co.uk/'
+languageCode = 'en-gb'
+title = 'Harry - Software Engineer'
+enableRobotsTXT = true
