@@ -112,6 +112,7 @@ h2
     border-radius: 100%
 
     @media screen and (max-width: 1000px)
+      margin-top: 50px
       position: relative
       left: 50%
       transform: translateX(-50%)
@@ -119,7 +120,24 @@ h2
   .picture-description
     text-align: center
     color: $text-subtle-color
-    margin: 20px 0 30px 0
+    margin: 20px 0 50px 0
+
+  .contact
+    .header
+      font-size: 24px
+
+    ul
+      list-style: none
+      padding: 0
+
+    li a
+      display: flex
+      align-items: center
+      margin: 0 0 10px 0
+      color: $text-subtle-color
+
+      .text
+        margin-left: 10px
 
   .technologies
     .header
