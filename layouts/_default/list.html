@@ -145,7 +145,7 @@
             <h2 class="header">Contact</h2>
             <ul>
                 <li>
-                    <a href="mailto:harry@froogo.co.uk" target="_blank" rel="noopener">
+                    <a href="mailto:harry@froogo.co.uk" target="_blank" rel="noopener" aria-label="My email (harry@froogo.co.uk)">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24"
                              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                              stroke-linecap="round" stroke-linejoin="round">
@@ -157,7 +157,7 @@
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord"
                              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -168,10 +168,10 @@
                             <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
                         </svg>
                         <span class="text">@froogo.</span>
-                    </a>
+                    </span>
                 </li>
                 <li>
-                    <a href="https://en.wikipedia.org/wiki/IP_over_Avian_Carriers" target="_blank" rel="noopener">
+                    <a href="https://en.wikipedia.org/wiki/IP_over_Avian_Carriers" target="_blank" rel="noopener" aria-label="IPoAC Birdhouse #73">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" width="24"
                              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                              stroke-linecap="round" stroke-linejoin="round">
@@ -211,7 +211,7 @@
     <h1 class="header">Projects</h1>
     <div class="description">
         A few of my open-source projects, for a full list, check out my GitHub
-        <a href="https://github.com/VolticFroogo" target="_blank" rel="noopener">@VolticFroogo</a>
+        <a href="https://github.com/VolticFroogo" target="_blank" rel="noopener" aria-label="My GitHub profile (@VolticFroogo)">@VolticFroogo</a>
     </div>
 
     <div class="grid">
@@ -226,7 +226,7 @@
             </div>
             <div class="icons">
                 {{ if .Params.github }}
-                <a href="{{ .Params.github }}" target="_blank" rel="noopener">
+                <a href="{{ .Params.github }}" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -237,7 +237,7 @@
                 </a>
                 {{ end }}
                 {{ if .Params.website }}
-                <a href="{{ .Params.website }}" target="_blank" rel="noopener">
+                <a href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="Website">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
