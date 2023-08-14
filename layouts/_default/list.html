@@ -226,7 +226,7 @@
             </div>
             <div class="icons">
                 {{ if .Params.github }}
-                <a href="{{ .Params.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+                <a href="{{ .Params.github }}" target="_blank" rel="noopener" aria-label="{{ .Title }} GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -237,7 +237,7 @@
                 </a>
                 {{ end }}
                 {{ if .Params.website }}
-                <a href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="Website">
+                <a href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="{{ .Title }} Website">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
