@@ -4,7 +4,7 @@ website: https://froogo.co.uk/
 github: https://github.com/VolticFroogo/homepage-v3
 order: 3
 feature: true
-bgImage: homepage-v3.png
+bgImage: homepage-v3.webp
 ---
 
 I wrote this very website you're on right now.
