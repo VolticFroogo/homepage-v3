@@ -42,10 +42,8 @@
           content="Hey, I'm Harry, a software engineer in the UK."/>
     <meta name="twitter:image" content="https://froogo.co.uk/img/icon.png"/>
 
-    <!-- Simple Analytics (privacy respecting analytics) -->
-    <script async defer src="https://sa.froogo.co.uk/latest.js"></script>
-    <noscript><img src="https://sa.froogo.co.uk/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/>
-    </noscript>
+    <!-- Umami Analytics -->
+    <script defer src="https://umami.froogo.co.uk/script.js" data-website-id="aaf78665-b9e8-4637-a1d1-f8db2f8af177"></script>
 
     <!-- Inlined CSS -->
     {{ $sass := resources.Get "sass/main.sass" }}
@@ -145,7 +143,7 @@
             <h2 class="header">Contact</h2>
             <ul>
                 <li>
-                    <a href="mailto:harry@froogo.co.uk" target="_blank" rel="noopener" aria-label="My email (harry@froogo.co.uk)">
+                    <a href="mailto:harry@froogo.co.uk" target="_blank" rel="noopener" aria-label="My email (harry@froogo.co.uk)" data-umami-event="click-link-email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24"
                              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                              stroke-linecap="round" stroke-linejoin="round">
@@ -211,7 +209,7 @@
     <h1 class="header">Projects</h1>
     <div class="description">
         A few of my open-source projects, for a full list, check out my GitHub
-        <a href="https://github.com/VolticFroogo" target="_blank" rel="noopener" aria-label="My GitHub profile (@VolticFroogo)">@VolticFroogo</a>
+        <a href="https://github.com/VolticFroogo" target="_blank" rel="noopener" aria-label="My GitHub profile (@VolticFroogo)" data-umami-event="click-link-github">@VolticFroogo</a>
     </div>
 
     <div class="grid">
@@ -226,7 +224,7 @@
             </div>
             <div class="icons">
                 {{ if .Params.github }}
-                <a href="{{ .Params.github }}" target="_blank" rel="noopener" aria-label="{{ .Title }} GitHub">
+                <a href="{{ .Params.github }}" target="_blank" rel="noopener" aria-label="{{ .Title }} GitHub" data-umami-event="click-link-project" data-umami-event-type="github" data-umami-event-name="{{ .Title }}">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -237,7 +235,7 @@
                 </a>
                 {{ end }}
                 {{ if .Params.website }}
-                <a href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="{{ .Title }} Website">
+                <a href="{{ .Params.website }}" target="_blank" rel="noopener" aria-label="{{ .Title }} Website" data-umami-event="click-link-project" data-umami-event-type="website" data-umami-event-name="{{ .Title }}">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www"
                          width="24"
                          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
