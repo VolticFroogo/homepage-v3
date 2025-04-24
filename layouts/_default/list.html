@@ -185,26 +185,6 @@
     </div>
 </div>
 
-<div id="timeline">
-    <h1 class="header">Timeline</h1>
-
-    {{ $projectsSection := .Site.GetPage "section" "timeline" }}
-    {{ range (sort $projectsSection.Pages "Date").Reverse }}
-    <div class="container">
-        <div class="content" data-aos="fade-up" data-aos-offset="200">
-            <h2 class="title">{{ .Title }}</h2>
-            <div class="year">
-                {{ .Date.Format "Jan 2006" }}
-                {{ if .Params.dateTo }}
-                - {{ time.Format "Jan 2006" .Params.dateTo }}
-                {{ end }}
-            </div>
-            <div class="description">{{ .Content }}</div>
-        </div>
-    </div>
-    {{ end }}
-</div>
-
 <div id="projects">
     <h1 class="header">Projects</h1>
     <div class="description">
@@ -257,6 +237,26 @@
         </div>
         {{ end }}
     </div>
+</div>
+
+<div id="timeline">
+    <h1 class="header">Timeline</h1>
+
+    {{ $projectsSection := .Site.GetPage "section" "timeline" }}
+    {{ range (sort $projectsSection.Pages "Date").Reverse }}
+    <div class="container">
+        <div class="content" data-aos="fade-up" data-aos-offset="200">
+            <h2 class="title">{{ .Title }}</h2>
+            <div class="year">
+                {{ .Date.Format "Jan 2006" }}
+                {{ if .Params.dateTo }}
+                - {{ time.Format "Jan 2006" .Params.dateTo }}
+                {{ end }}
+            </div>
+            <div class="description">{{ .Content }}</div>
+        </div>
+    </div>
+    {{ end }}
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"
